@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Сюда пишутся тексты самих вопросов и ответы на них с указанием номера правильного ответа
+(нумерация вопросов начинается с нуля) -->
+
+<resources>
+<!--
+    <question_group1>
+		<question>
+        	<string name="name_question_1">Как будет ''покупать''?</string>
+        	<string name="answer0_question_1">bought</string>
+        	<string name="answer1_question_1">buy</string>
+        	<string name="answer2_question_1">build</string>
+        	<string name="answer3_question_1">beautiful</string>
+        	<string name="answer4_question_1">bee</string>
+        	<integer name="correct_answer_question_1">1</integer>
+        </question>
+        
+		<question>
+        	<string name="name_question_2">Как будет ''покупать2''?</string>
+        	<string name="answer0_question_2">bought</string>
+        	<string name="answer1_question_2">buy</string>
+        	<string name="answer2_question_2">build</string>
+        	<string name="answer3_question_2">beautiful</string>
+        	<string name="answer4_question_2">bee</string>
+        	<integer name="correct_answer_question_2">1</integer>
+        </question>
+        
+	</question_group1>
+-->    
+	<!--
+	<string name="name_question_1">Как будет &quot;покупать&quot;?</string>
+      	<string name="answer0_question_1">bought</string>
+       	<string name="answer1_question_1">buy</string>
+       	<string name="answer2_question_1">build</string>
+       	<string name="answer3_question_1">beautiful</string>
+       	<string name="answer4_question_1">bee</string>
+       	<integer name="correct_answer_question_1">1</integer>
+       	
+	<string name="name_question_2">Как будет &quot;покупать2&quot;?</string>
+    	<string name="answer0_question_2">bought</string>
+       	<string name="answer1_question_2">buy</string>
+       	<string name="answer2_question_2">build</string>
+       	<string name="answer3_question_2">beautiful</string>
+       	<string name="answer4_question_2">bee</string>
+       	<integer name="correct_answer_question_2">1</integer>  	
+    
+    <string-array name="question1">
+        <item>Как будет ""покупать""?</item>
+        <item>bought</item>
+        <item>buy</item>
+        <item>build</item>
+        <item>beautiful</item>
+        <item>bee</item>
+        <item>1</item>
+    </string-array>
+    
+    <string-array name="question2">
+        <item>Как будет &quot;покупать2&quot;?</item>
+        <item>bought2</item>
+        <item>buy2</item>
+        <item>build2</item>
+        <item>beautiful2</item>
+        <item>bee2</item>
+        <item>1</item>
+    </string-array>
+    
+    <array name="question_group1">
+        <item>@array/question1</item>
+        <item>@array/question2</item>
+    </array>
+    
+    <array name="question_group">
+        <item>@array/question_group1</item>
+    </array>
+    -->
+<!--    
+    <array name="question_group">
+        <array>
+        	<string-array>
+        		<item>Как будет &quot;покупать&quot;?</item>
+        		<item>bought</item>
+        		<item>buy</item>
+        		<item>build</item>
+        		<item>beautiful</item>
+        		<item>bee</item>
+        		<item>1</item>
+    		</string-array>
+        	<string-array>
+        		<item>Как будет &quot;покупать2&quot;?</item>
+        		<item>bought2</item>
+        		<item>buy2</item>
+        		<item>build2</item>
+        		<item>beautiful2</item>
+        		<item>bee2</item>
+        		<item>1</item>
+    		</string-array>
+    	</array>
+    </array>
+-->  
+
+	<string-array name="q_1">
+        <item>Переведите: to drink_есть_одеваться_принимать душ_пить_прыгать_3</item>
+        <item>Переведите: to read_бежать_писать_скакать_рисовать_читать_4</item>
+    </string-array>
+    
+	<!-- &#8230; - символ "..." -->
+	
+	<string-array name="q_2">
+        <item>Переведите: I am drinking &#8230;_Я пью с утра_Я обычно пил_Я пью сейчас_Я редко пью_Я мог выпить_2</item>
+        <item>Переведите: I often read &#8230;_Я читаю сейчас_Я читал в 5 часов_Я бывало читал_Я часто читаю_Я читаю уже 2 месяца_3</item>
+    </string-array>
+    
+	<string-array name="q_3">
+        <item>Переведите: I could drink &#8230;_Я пил, когда он вошёл_Я мог выпить_Я редко пью_Я, бывало, пил_Я обычно пил_1</item>
+        <item>Переведите: I would read &#8230;_Я обычно читал_Я мог прочесть_Я, бывало, читал_Я читал в 5 часов_Я читаю сейчас_2</item>
+    </string-array>
+    
+	<string-array name="q_4">
+        <item>Переведите: I seldom drink &#8230;_Я пью сейчас_Я, бывало, пил_Я пью с утра_Я редко пью_Я пил, когда он вошёл_3</item>
+        <item>Переведите: I could read &#8230;_Я мог прочесть_Я читаю уже 2 месяца_Я часто читаю_Я обычно читал_Я, бывало, читал_0</item>
+    </string-array>
+    
+	<string-array name="q_5">
+        <item>Переведите: I have been drinking &#8230;_Я пью с утра_Я пью сейчас_Я пил, когда он вошёл_Я мог выпить_Я, бывало, пил_0</item>
+        <item>Переведите: I am reading &#8230;_Я часто читаю_Я читаю уже 2 месяца_Я читаю сейчас_Я обычно читал_Я мог прочесть_2</item>
+    </string-array>
+    
+	<string-array name="q_6">
+        <item>Переведите: I was drinking &#8230;_Я мог выпить_Я обычно пил_Я, бывало, пил_Я пил, когда он вошёл_Я пью сейчас_3</item>
+        <item>Переведите: I was reading &#8230;_Я мог прочесть_Я, бывало, читал_Я обычно читал_Я часто читаю_Я читал в 5 часов_4</item>
+    </string-array>
+    
+	<string-array name="q_7">
+        <item>Переведите: I used drink &#8230;_Я пью сейчас_Я пью с утра_Я редко пью_Я, бывало, пил_Я обычно пил_4</item>
+        <item>Переведите: I have been read &#8230;_Я читаю сейчас_Я обычно читал_Я читал в 5 часов_Я читаю уже 2 месяца_Я, бывало, читал_3</item>
+    </string-array>
+ 
+</resources>
