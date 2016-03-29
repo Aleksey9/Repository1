@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		TextView infoTextView = (TextView) findViewById(R.id.textView3);
 		count = 0;
-		infoTextView.setText("Количество изученных слов: " + count);
+		infoTextView.setText("Количество изученных глаголов: " + count);
 		for (int i = 0; i < count_of_group_questions; ++i)
 			ArrQuestion.add(i);
 	}
