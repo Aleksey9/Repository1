@@ -13,11 +13,15 @@ import android.widget.TextView;
 
 public class QuestionActivity extends Activity{
 	
+	/*
+	 * Основные поля:
+	 */
+	
 	//создаём объект "глобальный вопрос"
 		static Question q1 = new Question();
 		
 	//номер случайного вопроса (пока не задействовано)
-		static int numberOfRandomQuestion;
+		//static int numberOfRandomQuestion;*/
 		
 	//номер случайной группы вопросов
 		static int numberOfRandomGroupQuestion;
@@ -33,7 +37,14 @@ public class QuestionActivity extends Activity{
 		
 	//получен ли ответ на вопрос
 		static boolean AnswerTheQuestion;
-	
+
+	/*
+	 * Функции и процедуры:
+	 */
+		
+	/*************************************************************************************************************************
+	 * Создание активности
+	 */
 	protected void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.activity_second);
@@ -46,7 +57,9 @@ public class QuestionActivity extends Activity{
 			AskQuestions();
 	}
 		
-	
+	/*************************************************************************************************************************
+	 * Вывод окна диалога
+	 */
 	public static void showMessage(Context context, String message)
     {
   	  AlertDialog.Builder dlgAlert  = new AlertDialog.Builder(context);
@@ -64,7 +77,7 @@ public class QuestionActivity extends Activity{
     }
 	
 	
-	/*/*************************************************************************************
+	/*************************************************************************************************************************
 	 * Вывод вопроса
 	 */
 	public void output() {
@@ -87,7 +100,7 @@ public class QuestionActivity extends Activity{
 	}
 
 	
-	/***************************************************************************************
+	/*************************************************************************************************************************
 	 * Здесь задаём вопросы	
 	 */
 	public void AskQuestions() {
@@ -150,18 +163,24 @@ public class QuestionActivity extends Activity{
 	}
 
 	
-	/***************************************************************************************
+	/*************************************************************************************************************************
 	 * Обработка нажатия на кнопку
 	 */
 	public final static String KEY = "com.example.myproject.KEY";
 	public void buttonClicked(View view) {
 		TextView tv = (TextView) findViewById(R.id.textView1);
 		Button bt = (Button) findViewById(R.id.button1);
-		//если ответили на вопрос
+		//если ответили на вопрос (нажали на кнопку "ДАЛЕЕ")
 		if (AnswerTheQuestion) {
+			
+			//Меняем кнопку "ДАЛЕЕ" на кнопку "ОТВЕТИТЬ"
 			bt.setText("Ответить");
 			AnswerTheQuestion = false;
+			
+			//Если ответили на все вопросы, то:
 			if (CountAskQuestion == 6) {
+				
+				//Обнуляем счётчик кол-ва ответов:
 				CountAskQuestion = 0;
 				
 				// Делаем намерение
@@ -175,12 +194,14 @@ public class QuestionActivity extends Activity{
 				//Обнуляем счётчик правильных ответов
 				CorrectAnswers = 0;
 				finish();
+				
+			//если на какие-то вопросы не ответили, то:
 			} else {
 				CountAskQuestion += 1;
 				AskQuestions();
 			}
 			
-		//если не ответили на вопрос
+		//если не ответили на вопрос (нажали на кнопку "ОТВЕТИТЬ")
 		} else {
 			
 			/**------------------------<находим ответ пользователя>------------------------*/
